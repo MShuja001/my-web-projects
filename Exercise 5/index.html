@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        :root{
+            --color:#204b68;    
+            --color2:#aedaf8;
+        }
+        body{
+            background-color: var(--color);
+        }
+        *::selection{
+            background-color: var(--color);
+            color: var(--color2);
+        }
+        *{
+            
+            font-family: "Rubik", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav{
+            font-family: "Rubik", sans-serif;
+            display: flex;
+            font-weight: bolder;
+            background-color: var(--color2);
+            position: sticky;
+            top: 0;
+
+        }
+        .nav a{
+            text-decoration: none;
+            color: var(--color);
+            padding: 20px;
+        }
+        .nav a:hover{
+            color: var(--color2);
+            background-color: var(--color);
+            transition: 0.3s;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 94vw;
+            height: 70vh;
+            background-color: var(--color);
+            margin: 60px auto;
+            gap: 80px;
+
+        }
+
+        .box{
+            width: 600px;
+            height: 450px;
+            background-color: var(--color2);
+            color: var(--color);
+            padding: 30px;
+            border-radius: 30px;
+        }
+        .box h2{
+            margin-bottom:50px;
+            
+        }
+        .section{
+            font-family: "Rubik", sans-serif;
+            width: 60vw;
+            height: 20vh;
+            margin: 10px auto;
+            border-radius: 30px;
+            background-color: var(--color2);
+            color: var(--color);
+        }
+
+        .section h1{
+            text-align: center;
+            padding: 40px;
+        }
+        .foot{
+            background-color: var(--color2);
+            padding: 20px;
+            color: var(--color);
+            margin-top: 100px;
+        }
+        .logo{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            
+            padding: 15px;
+        }
+        .logo img:hover{
+            box-shadow: 0 0 10px var(--color2);
+            transition: 0.3s;
+        }
+        .logo img{
+            border-radius: 50%;
+            border: 2px solid var(--color2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="./">Home</a>
+        <a href="/">About</a>
+        <a href="./">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="box box1">
+            <h2>Welcome To My Website</h2>
+            <p>This is a simple website layout using HTML and CSS. It includes a navigation bar and a container with two boxes. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nobis explicabo dolorem aliquid provident? Ipsam, consequatur ipsa cumque modi velit blanditiis quam vero nulla, aliquam fuga nam quisquam magni ad quia expedita! Provident ipsum, maxime cumque vero praesentium voluptatibus porro repudiandae architecto, accusantium, natus ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maxime dicta illo voluptates repudiandae velit dolorem, commodi cupiditate, consequuntur assumenda deserunt. Impedit, iusto! Magni omnis explicabo sapiente vitae quibusdam at, amet, molestias officia voluptatum odio dolor mollitia nostrum tenetur temporibus praesentium nesciunt est ducimus error!</p>
+        </div>
+        <div class="box box2">
+            <h2>This is the other box</h2>
+            <p>
+                This is another box inside the container. You can add more content here as needed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nobis explicabo dolorem aliquid provident? Ipsam, consequatur ipsa cumque modi velit blanditiis quam vero nulla, aliquam fuga nam quisquam magni ad quia expedita! Provident ipsum, maxime cumque vero praesentium voluptatibus porro repudiandae architecto, accusantium, natus ut? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maxime dicta illo voluptates repudiandae velit dolorem, commodi cupiditate, consequuntur assumenda deserunt. Impedit, iusto! Magni omnis explicabo sapiente vitae quibusdam at, amet, molestias officia voluptatum odio dolor mollitia nostrum tenetur temporibus praesentium nesciunt est ducimus error!
+            </p>
+        </div>
+    </div>
+    <div class="section">
+        <h1>
+            Who the hell are you? Why are you reading my code? Why are you even here?
+        </h1>
+    </div>
+    <footer class="foot">
+        <h3>
+            &copy; 2025 Shuja's  WebSite. All rights reserved.
+        </h3>
+    </footer>
+    <div class="logo">
+        <img src="./logo.jpg" alt="Logo" width="50px" height="50px">
+    </div>
+</body>
+</html>

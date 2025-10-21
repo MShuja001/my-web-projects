@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quaries</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        @media only screen and (max-width:455px){
+            body{ background-color: aqua;
+                  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                  color: thistle;
+            }
+            .boxes{ flex-direction: column;
+            align-items: center;}
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            margin: 10px;
+        }
+        .boxes{
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="p">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores non, ut modi, nisi, architecto reiciendis corrupti nulla repellat libero distinctio?
+        </p>
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

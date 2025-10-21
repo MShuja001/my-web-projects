@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        :root{
+            --color: #459fdb;
+            --seccolor:rgb(106, 202, 219);
+        }
+        .nav ul{
+            display: flex;
+            list-style: none;
+            background-color: var(--seccolor);
+        }
+        .nav ul li{
+            padding: 10px;
+            background-color: var(--color);
+            cursor: pointer;
+        }
+        .nav ul li:hover{
+            background-color: var(--seccolor);
+            transition: 0.3s;
+        }
+        p{
+            font-size: 20px;
+            text-align: justify;
+            margin: 20px;
+            background-color: var(--color);}
+            p:hover{
+                background-color: var(--seccolor);
+                transition: 0.3s;
+            }
+            .nav ul:hover{
+                background-color: var(--color);
+                transition: 0.3s;
+            }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Content</li>
+        </ul>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a sapiente, quia placeat iure rem nam nobis atque minima, autem odio? Dolores accusantium ipsum atque voluptatem, beatae inventore! Recusandae nemo maiores sapiente quibusdam cupiditate, pariatur dolores quos. Dolore cupiditate libero neque quisquam perferendis fugiat ducimus.</p>
+    </div>
+</body>
+</html>

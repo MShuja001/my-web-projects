@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        /* div > p{
+            background-color: purple;
+            color: blue;
+        } */
+        /* div :first-child{
+            background-color: purple;
+            color: blue;
+        } */
+        a:visited{
+            color: red;
+        }
+        a:hover{
+            color: blanchedalmond;
+            background-color: pink;
+        }
+        a:link{
+            color: magenta;
+        }
+        a:active{
+            background-color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        These are some pseudo selectors
+    </h1>
+    <div class="one">
+        <p>This is the first child</p>
+        <p>This is the second child</p>
+    </div>
+    <div>
+        <p>
+          <a href="https://www.google.com">Go TO google</a>
+          <a href="https://www.doodle.com">Go TO Doogle</a>
+        </p>
+    </div>
+</body>
+</html>
