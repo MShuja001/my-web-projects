@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="navbar">
+    <div class="logo"><img src="/assets/logo.svg" alt="">
+    </div>  
+    <div class="home">
+        <span class="house"><img src="/assets/home.svg" alt=""></span>
+        <span class="search"><span id="sbtn" class="sbtn"><img src="/assets/search.svg" alt=""></span><input type="search" id="search" placeholder="What do You want to search?"><span class="sbtn" id="bbtn"><img src="/assets/browse.svg" alt=""></span></span></div> <!-- home -->
+        <div class="buttons">
+            <span class="navbtn">Premium</span>
+            <span class="navbtn">Support</span>
+            <span class="navbtn">Download</span>
+            <span class="line"></span>
+
+            <span class="navbtn"><img src="/assets/dwnld.svg" alt=""> Install App</span>
+            <span class="navbtn">Sign up</span>
+            <button class="lbtn">Log in</button>
+        </div>
+    </div><!--navbar -->
+    <div class="container">
+        <div class="left">
+
+            <div class="library">
+                <h3>Your Library</h3>
+                <img src="/assets/cross.svg" class="libbtn" alt="">
+                <div class="songslist">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="http://">Legal</a>
+                <a href="http://">Help</a>
+                <a href="http://">Learn More</a>
+                <a href="http://">Contact us</a>
+                <a href="http://">Who are you?</a>
+                <a href="http://">Privacy</a>
+                <a href="http://">Cookies</a>
+            </div>
+        </div>
+        <div class="right">
+                                  <img src="/assets/hamburger.svg" alt="hamburger" class="hamburg">
+            <div class="playlists">
+                <h2>Trending Songs</h2>
+
+                    <div class="cardContainer">
+
+
+                        
+                    </div><!--cardContainer-->
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle">
+                                
+                            </div>
+                            <div class="progress"></div>
+                        </div>
+                            <div class="abovebar">
+                                <div class="songinfo">
+                                </div>
+                                <div class="songbtns">
+                                    <img id="previous" src="/assets/previous.svg" alt="previous">
+                                    <img id="play" src="/assets/playbtn.svg" alt="Play">
+                                    <img id="next" src="/assets/next.svg" alt="Next">
+                                </div>
+                                     <div class="voltime">
+                                <div class="songtime">
+                                </div>
+                                <div class="volume">
+                                    <img width="20px" src="/assets/volume.svg" alt="">
+                                    <input type="range" name="volume" value="100">
+                                </div>
+                                    </div>
+                            </div><!-- Above Bar-->    
+                    </div>
+            </div><!--playlists-->
+        </div><!--right-->
+    </div><!--container -->
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
