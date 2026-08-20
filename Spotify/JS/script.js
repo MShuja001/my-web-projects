@@ -29,9 +29,9 @@ function renderSongs() {
     for (const song of songs) {
         let displayName = decodeURIComponent(song).replace(".mp3", "");
         songul.innerHTML += `<li>
-            <img src="/assets/music.svg" alt="Music">
+            <img src="./assets/music.svg" alt="Music">
             <div class="info">${displayName}</div>
-            <img class="invert" src="/assets/play.svg" alt="">
+            <img class="invert" src="./assets/play.svg" alt="">
         </li>`;
     }
 
@@ -53,9 +53,9 @@ const playmusic = (track, pause = false) => {
 
     if (!pause) {
         CurrentSong.play();
-        play.src = "/assets/pause.svg";
+        play.src = "./assets/pause.svg";
     } else {
-        play.src = "/assets/playbtn.svg";
+        play.src = "./assets/playbtn.svg";
     }
 
     document.querySelector(".songinfo").innerHTML = track.replace(".mp3", "");
@@ -115,11 +115,11 @@ async function main() {
     });
 
     CurrentSong.addEventListener("play", () => {
-        play.src = "/assets/pause.svg";
+        play.src = "./assets/pause.svg";
     });
 
     CurrentSong.addEventListener("pause", () => {
-        play.src = "/assets/playbtn.svg";
+        play.src = "./assets/playbtn.svg";
     });
 
     // Update seekbar and time display
@@ -180,11 +180,11 @@ async function main() {
         CurrentSong.volume = parseInt(e.target.value) / 100;
         let img = document.querySelector(".volume").getElementsByTagName("img")[0];
         if (CurrentSong.volume === 0) {
-            img.src = "/assets/volume-mute.svg";
+            img.src = "./assets/volume-mute.svg";
         } else if (CurrentSong.volume <= 0.5) {
-            img.src = "/assets/volume.svg";
+            img.src = "./assets/volume.svg";
         } else {
-            img.src = "/assets/max-volume.svg";
+            img.src = "./assets/max-volume.svg";
         }
     });
 
@@ -195,11 +195,11 @@ async function main() {
         if (CurrentSong.volume === 0) {
             CurrentSong.volume = 1;
             input.value = 100;
-            img.src = "/assets/max-volume.svg";
+            img.src = "./assets/max-volume.svg";
         } else {
             CurrentSong.volume = 0;
             input.value = 0;
-            img.src = "/assets/volume-mute.svg";
+            img.src = "./assets/volume-mute.svg";
         }
     });
 }
