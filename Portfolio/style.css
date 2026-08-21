@@ -16,6 +16,13 @@ body {
         background-repeat: no-repeat;
         object-position: center center;
 }
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #00000060;
+    z-index: -1;
+}
 header{
     background: rgba(0, 0, 0, 0.729);
     backdrop-filter: blur(15px);
@@ -24,11 +31,12 @@ header{
     top: 0;
     width: 100%;
     z-index: 10;
+    height: 80px;
 }
 .navbar{
     padding: 0 5%;
-    margin: auto;
     height: 75px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -48,6 +56,28 @@ header{
     list-style:none;
     display:flex;
     gap:25px;
+}
+.hamnav{
+    transition: all 0.3s ease;
+      background: rgba(0, 0, 0, 0.729);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 210px;
+    top:80px ;
+    z-index: 12;
+    right: -215px;
+}
+.hamnav ul{
+    list-style: none;
+}
+.hamnav a{
+    display: flex;
+    padding: 15px 10px;
+}
+.hamnav a:hover{
+    background-color: var(--grey);
 }
 a{
 
@@ -187,7 +217,7 @@ a{
 }
 .projectcard{
     border: 1px solid var(--border);
-    background-color: rgb(1, 1, 29);
+    background-color: rgb(15, 15, 15, 57%);
     display: flex;
     flex-direction: column;
     height: 400px;
@@ -251,7 +281,9 @@ footer{
 }
 @media (max-width: 840px){
 
-    
+    .home{
+        text-align: center;
+    }
     .home{
         flex-direction: column;
         justify-content: center;
@@ -269,6 +301,9 @@ footer{
 @media (max-width: 625px) {
         .projectcontainer{
         grid-template-columns: repeat(1 , 1fr);
+    }
+    .hamnav{
+        display: flex;
     }
     .navbar ul{
         display: none;
